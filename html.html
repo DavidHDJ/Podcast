@@ -5,7 +5,7 @@
     function sendmail(){
         var mailadresse = document.getElementById("mailsender").value;
         const Http = new XMLHttpRequest();
-        const url='../mail.php?mail=' + encodeURI(mailadresse.trim());
+        const url='/mail.php?mail=' + encodeURI(mailadresse.trim());
         Http.open("GET", url);
         Http.send();
         Http.onreadystatechange = (e) => {
