@@ -9,7 +9,7 @@
         Http.open("GET", url);
         Http.send();
         Http.onreadystatechange = (e) => {
-            console.log(Http.responseText);
+            document.getElementById("mailsender_submit").value = "Gesendet!";
         }
     }
 </script>
